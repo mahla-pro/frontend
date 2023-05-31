@@ -1,13 +1,119 @@
-body {
+/* @font-face {
+  font-family: 'fatMsi';
+  src: url('./assets/fonts/Yekan-Bakh-FaNum-08-fat.eot') format('eot');
+  src: url('./assets/fonts/Yekan-Bakh-FaNum-08-fat.ttf') format('truetype'),
+  url('./assets/fonts/Yekan-Bakh-FaNum-08-fat.woff') format('woff');
+} */
+
+*{
+  /* font-family: 'fatMsi'; */
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  direction: rtl;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.home-page{
+  width: 100%;
+  text-align: center;
 }
+
+.home-page h1{
+  text-align: center;
+  padding: 50px 0;
+}
+
+#car{
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 100px 0;
+  flex-wrap: wrap;
+}
+
+.car{
+  width: calc(33.33%-20px);
+  text-align: right;
+  margin-top: 30px;
+}
+
+.car img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-btn{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.car-btn a{
+  color: #000;
+}
+#update{
+  background-color: rgb(168, 255, 201);
+}
+
+#remove{
+  background-color: rgb(255, 126, 122);
+}
+
+.home-page  .home-btn {
+  width: 200px;
+  margin: 0 auto;
+  background: rgb(248,90,33);
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.home-page  .home-btn a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+ .form{
+   width: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+ .form input{
+   width: 100%;
+   padding: 5px;
+   border: 2px solid #999;
+   margin-top: 30px;
+ }
+
+ .form button{
+   width: 100%;
+   padding: 5px;
+   outline: none;
+   border: none;
+   margin-top: 30px;
+   background: orangered;
+   font-size: 18px;
+   cursor: pointer;
+ }
